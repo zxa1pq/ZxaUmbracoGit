@@ -1,0 +1,26 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 19. juli 2016 14:44:28
+   Source : C:\users\ali\documents\visual studio 2013\Projects\ZxaUmbraco\ZxaUmbraco\bin\
+     Dest : C:\users\ali\documents\visual studio 2013\Projects\ZxaUmbraco\ZxaUmbraco\App_Data\NuGetBackup\20160719-144428\bin\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	C:\users\ali\documents\visual studio 2013\Projects\ZxaUmbraco\ZxaUmbraco\bin\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         0         0         0         0         0         0
+   Bytes :         0         0         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : 19. juli 2016 14:44:28
+

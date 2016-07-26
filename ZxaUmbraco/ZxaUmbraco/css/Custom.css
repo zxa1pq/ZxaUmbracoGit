@@ -1,0 +1,23 @@
+body .container-fluid .container {
+   
+}
+
+body .row {
+    float: left;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 25px;
+}
+
+#navList {
+    float: left;
+    padding-left: 10px;
+    list-style-type: none;
+
+}
+
+#navList1 {
+    float: left;
+    padding-left: 5px;
+    list-style-type: none;
+}

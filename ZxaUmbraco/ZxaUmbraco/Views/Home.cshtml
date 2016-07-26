@@ -1,0 +1,51 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+<div class="container-fluid">
+	<div class="container">
+		
+		<h1>@CurrentPage.Name</h1>
+		<br />
+        <img src="@CurrentPage.pageImage" alt="@CurrentPage.Name" />
+		
+        @CurrentPage.bodyText
+
+	
+		</div>
+		</div>
+<div class="thumbnailrow">
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="@CurrentPage.pageImage1" alt="@CurrentPage.Name">
+            <div class="caption">
+                <h3>@CurrentPage.Name</h3>
+                <p>@CurrentPage.bodyText</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="@CurrentPage.pageImage2" alt="@CurrentPage.Name">
+            <div class="caption">
+                <h3>@CurrentPage.Name</h3>
+                <p>@CurrentPage.bodyText</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="@CurrentPage.pageImage3" alt="@CurrentPage.Name">
+            <div class="caption">
+                <h3>@CurrentPage.Name</h3>
+                <p>@CurrentPage.bodyText</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
