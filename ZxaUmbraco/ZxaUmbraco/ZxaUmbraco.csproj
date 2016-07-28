@@ -508,6 +508,8 @@
     <Content Include="Views\Partials\Navigation.cshtml" />
     <Content Include="Views\NewsOverveiw.cshtml" />
     <Content Include="Views\News.cshtml" />
+    <Content Include="Views\ContactFormer.cshtml" />
+    <Content Include="Views\ContactPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

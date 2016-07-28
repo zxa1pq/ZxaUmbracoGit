@@ -207,6 +207,85 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 	}
 
+	/// <summary>Contact Former</summary>
+	[PublishedContentModel("contactFormer")]
+	public partial class ContactFormer : Master
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "contactFormer";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public ContactFormer(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ContactFormer, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Contact Message
+		///</summary>
+		[ImplementPropertyType("contactMessage")]
+		public string ContactMessage
+		{
+			get { return this.GetPropertyValue<string>("contactMessage"); }
+		}
+
+		///<summary>
+		/// Contact Name
+		///</summary>
+		[ImplementPropertyType("contactName")]
+		public string ContactName
+		{
+			get { return this.GetPropertyValue<string>("contactName"); }
+		}
+
+		///<summary>
+		/// Email From
+		///</summary>
+		[ImplementPropertyType("emailFrom")]
+		public string EmailFrom
+		{
+			get { return this.GetPropertyValue<string>("emailFrom"); }
+		}
+	}
+
+	/// <summary>Contact Page</summary>
+	[PublishedContentModel("contactPage")]
+	public partial class ContactPage : Master
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "contactPage";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public ContactPage(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ContactPage, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
 	/// <summary>Folder</summary>
 	[PublishedContentModel("Folder")]
 	public partial class Folder : PublishedContentModel
