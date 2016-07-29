@@ -17,8 +17,10 @@
     <li id="navList" class="navbar navbar-inverse"><a href="@HP.Url">@HP.Name</a></li>
     @foreach (var item in selection)
     {
+       
         <li id="navList" class="@(item.IsAncestorOrSelf(CurrentPage) ? "current" : null)">
             <a href="@item.Url">@item.Name</a>
         </li>
+        
     }
 </ul>

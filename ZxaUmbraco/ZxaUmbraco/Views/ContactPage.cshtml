@@ -1,13 +1,11 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ContactPage>
+              @using ZxaUmbraco.Controllers;
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "Master.cshtml";
+    Layout = "Master.cshtml";
 }
-<form>
-    <label for="emailFrom">Email</label><input id="emailFrom" type="email"/>
-    <label for="nameFrom">Name</label><input id="nameFrom" type="text"/>
-    <br/>
-    <label for="messageFrom">Name</label>
-    <br/>
-    <textarea id="messageFrom"></textarea>
-</form>
+<div class="container-fluid">
+    <div class="container">
+        @Html.Action("ShowForm", "ContactSurface")
+</div>
+</div>
