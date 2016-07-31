@@ -14,8 +14,21 @@
         var HP = Model.Content.AncestorsOrSelf(1).FirstOrDefault();
        var SearchResultsPage = Model.Content.AncestorOrSelf(1).Children().Where(x => x.DocumentTypeAlias == "searchResults").First();
       //  var HomePage = @CurrentPage.AncestorsOrSelf(1).First();
+       var languages = Umbraco.TypedContentAtRoot();
    } 
-    <li id="navList" class="navbar navbar-inverse"><a href="@HP.Url">@HP.Name</a></li>
+    @foreach (var language in languages)
+    {
+        if (language.HasProperty("languageIcon"))
+        { 
+        var imgId = language.GetPropertyValue("languageIcon");
+        var img = Umbraco.Media(imgId);
+        <a href="@language.Url">
+        <img src="@img.Url" alt="@img.Name" height="50px" width="50px"/>
+       </a>
+            }
+    }
+
+    <li id="navList" class="navbar navbar-inverse"><a href="@HP.Url">@HP.GetPropertyValue("pageTitle")</a></li>
     @foreach (var item in selection)
     {
        
@@ -27,7 +40,7 @@
 </ul>
 <div class="col-lg-3 input-group" >
 <form action="@SearchResultsPage.UrlAbsolute()" method="post" target="_self">
-    <input type="text" class="form-control" placeholder="Search .." name="query" />
+    <input type="text" class="form-control" placeholder='@Umbraco.Field("#Search Placeholder")' name="query" />
     <span class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></span>
     
 </form>

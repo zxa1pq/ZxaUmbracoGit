@@ -3250,6 +3250,7 @@
     <Folder Include="App_Data\packages\created\" />
     <Folder Include="App_Data\preview\" />
     <Folder Include="App_Data\TEMP\Install\" />
+    <Folder Include="App_Plugins\Example\Application\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Umbraco\Config\Create\" />
     <Folder Include="Views\Home\" />
