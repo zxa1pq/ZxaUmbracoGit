@@ -1,0 +1,19 @@
+﻿{
+	propertyEditors:
+	[
+	{
+	alias: "CharLimiter",
+	name: "Character Limiter",
+	editor:
+	{
+		view:"~/App_Plugins/CharLimiter/charlimiter.editor.html"
+		
+	}
+	}
+	],
+
+	javascript:
+	[
+	"~/App_Plugins/CharLimiter/charlimiter.controller.js"
+	]
+}

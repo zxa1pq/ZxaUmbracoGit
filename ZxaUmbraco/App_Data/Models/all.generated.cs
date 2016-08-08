@@ -277,9 +277,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// Contact Name
 		///</summary>
 		[ImplementPropertyType("contactName")]
-		public string ContactName
+		public object ContactName
 		{
-			get { return this.GetPropertyValue<string>("contactName"); }
+			get { return this.GetPropertyValue("contactName"); }
 		}
 
 		///<summary>

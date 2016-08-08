@@ -18,5 +18,7 @@ namespace ZxaUmbraco.Models
         public string City { get; set; }
         public IEnumerable<SelectListItem> ListOfGenders { get; set; }
         public string SelectedGender { get; set; }
+        
+
     }
 }

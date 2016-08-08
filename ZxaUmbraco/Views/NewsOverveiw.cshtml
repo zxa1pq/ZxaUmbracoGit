@@ -1,9 +1,11 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.NewsOverveiw>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
+@using cmodels = Umbraco.Core.Models;
 @{
     Layout = "Master.cshtml";
     var ListOfNews = CurrentPage.Children();
 }
+
 <div class="container-fluid">
     <div class="container">
         <h1>@CurrentPage.Name</h1>

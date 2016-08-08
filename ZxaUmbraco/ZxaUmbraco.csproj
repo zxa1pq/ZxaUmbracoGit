@@ -295,11 +295,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\cache\3\2\4\d\9\f\324d9f66af2bacfd446360230d68a6889205c05f.jpg" />
-    <Content Include="App_Data\cache\7\a\1\e\4\6\7a1e460b25ee542ea800545c64edcc69b0ffc371.jpg" />
-    <Content Include="App_Data\cache\8\9\c\7\1\6\89c7163fa3bf87e539dfa0d3d36889279905b9df.png" />
-    <Content Include="App_Data\cache\a\f\8\8\2\a\af882aa76fb6fab3b2ef845cc567497276501314.jpg" />
-    <Content Include="App_Data\cache\f\d\b\2\1\3\fdb213a1926585eedbce83b31bf2e61ba1b744ce.jpg" />
+    <Content Include="App_Plugins\CharLimiter\charlimiter.editor.html" />
     <Content Include="bin\de\System.Windows.Interactivity.resources.dll" />
     <Content Include="bin\en\System.Windows.Interactivity.resources.dll" />
     <Content Include="bin\es\System.Windows.Interactivity.resources.dll" />
@@ -1375,16 +1371,6 @@
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
     <Content Include="App_Data\packages\installed\installedPackages.config" />
-    <Content Include="App_Data\TEMP\ClientDependency\254250317_251d8d54952a4516b22322c27999b119.cdJ" />
-    <Content Include="App_Data\TEMP\ClientDependency\254250317_3dc3f62337dd4dfea70123994b665290.cdC" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\ZXAHOME\External\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\ZXAHOME\External\Index\segments_1" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\ZXAHOME\InternalMember\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\ZXAHOME\InternalMember\Index\segments_1" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\ZXAHOME\Internal\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\ZXAHOME\Internal\Index\segments_1" />
-    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.ZXAHOME.hash" />
-    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.ZXAHOME.list" />
     <Content Include="App_Data\umbraco.config" />
     <Content Include="bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <Content Include="bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
@@ -1416,6 +1402,11 @@
     <Content Include="bower_components\jquery\bower.json" />
     <Content Include="bower_components\jquery\dist\jquery.min.map" />
     <Content Include="bower_components\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="App_Plugins\CharLimiter\package.manifest" />
+    <Content Include="App_Plugins\CharLimiter\charlimiter.controller.js" />
+    <Content Include="App_Data\TEMP\formsupdate" />
+    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.DESKTOP-DBO0AM8.hash" />
+    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.DESKTOP-DBO0AM8.list" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1444,8 +1435,6 @@
     <Content Include="App_Data\NuGetBackup\20160719-144432\Config\Lang\ru-RU.user.xml" />
     <Content Include="App_Data\NuGetBackup\20160719-144432\Config\Lang\sv-SE.user.xml" />
     <Content Include="App_Data\NuGetBackup\20160719-144432\Config\Lang\zh-CN.user.xml" />
-    <Content Include="App_Data\TEMP\ClientDependency\ZXAHOME-78da630c4948e1ee5334d675b5067180-map.xml" />
-    <Content Include="App_Data\TEMP\DistCache\ZXAHOME\LMW3SVC16ROOT-lastsynced.txt" />
     <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
@@ -4059,7 +4048,7 @@
     <Folder Include="App_Data\NuGetBackup\20160719-144432\Umbraco_Client\" />
     <Folder Include="App_Data\packages\created\" />
     <Folder Include="App_Data\preview\" />
-    <Folder Include="App_Data\TEMP\Install\" />
+    <Folder Include="App_Data\TEMP\ExamineIndexes\" />
     <Folder Include="App_Plugins\Example\Application\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Umbraco\Config\Create\" />
