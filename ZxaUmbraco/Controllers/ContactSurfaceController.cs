@@ -42,6 +42,7 @@ namespace ZxaUmbraco.Controllers
             var newComment = Services.ContentService.CreateContent(model.Name + " - " + DateTime.Now.ToString("dd-MM-yyyy HH:mm"), CurrentPage.Id, "contactFormer");
             var myService = ApplicationContext.Services.DataTypeService;
             var SelectedGender = myService.GetAllDataTypeDefinitions().First(x => x.Id == 1092);
+
             int SelectedGenderPreValueId = myService.GetPreValuesCollectionByDataTypeId(SelectedGender.Id).PreValuesAsDictionary.Where(x => x.Value.Value == model.SelectedGender).Select(x => x.Value.Id).First();
 
 
@@ -50,6 +51,9 @@ namespace ZxaUmbraco.Controllers
             newComment.SetValue("contactMessage", model.Message);
             newComment.SetValue("dropdownGender", SelectedGenderPreValueId);
             newComment.SetValue("senderAddress", model.Address);
+            newComment.SetValue("senderPostal", model.Postal);
+            newComment.SetValue("senderCity", model.City);
+
             Services.ContentService.SaveAndPublishWithStatus(newComment);
             return RedirectToCurrentUmbracoPage();
         }

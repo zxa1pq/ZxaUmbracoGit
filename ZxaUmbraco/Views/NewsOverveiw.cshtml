@@ -9,6 +9,7 @@
         <h1>@CurrentPage.Name</h1>
         <br />
         @CurrentPage.newsOverviewBodyText
+
         @foreach (var news in ListOfNews)
         {
 
@@ -17,9 +18,10 @@
                    <a href="@news.Url"> <h3 class="panel-title">@news.Name</h3></a>
                 </div>
                 <div class="panel-body">
-                    @Umbraco.Truncate(news.newsText,200)
+                    @Umbraco.Truncate(news.newsText, 600);
                 </div>
             </div>
         }
+
     </div>
 </div>

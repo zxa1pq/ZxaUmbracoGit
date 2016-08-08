@@ -18,7 +18,7 @@ using Umbraco.Web;
 using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
-[assembly: PureLiveAssembly, System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly: PureLiveAssembly, System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -293,6 +293,24 @@ namespace Umbraco.Web.PublishedContentModels
 		public string SenderAddress
 		{
 			get { return this.GetPropertyValue<string>("senderAddress"); }
+		}
+
+		///<summary>
+		/// Sender City
+		///</summary>
+		[ImplementPropertyType("senderCity")]
+		public string SenderCity
+		{
+			get { return this.GetPropertyValue<string>("senderCity"); }
+		}
+
+		///<summary>
+		/// Sender Postal
+		///</summary>
+		[ImplementPropertyType("senderPostal")]
+		public string SenderPostal
+		{
+			get { return this.GetPropertyValue<string>("senderPostal"); }
 		}
 	}
 

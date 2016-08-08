@@ -7,12 +7,28 @@
     <div class="container">
         <div class="col-lg-8 pull-left">
             <h2>@CurrentPage.Name</h2>
-            @CurrentPage.Name
             @CurrentPage.newsText
+
+          
             </div>
             <div class="col-lg-4 pull-left">
                 <h4>Created At:  @Model.Content.CreateDate.ToString() </h4>>
                 <h4>Last Edited: @Model.Content.UpdateDate.ToString()</h4>
+
             </div>
+
         </div>
+
+    </div>
+<div style="text-align:center">
+@{
+    if (@Model.Content.Next() != null)
+    {
+        <a href="@Model.Content.Next().Url" style="position: fixed">Next</a>
+    }
+    if (@Model.Content.Previous() != null)
+    {
+        <a href="@Model.Content.Previous().Url" style="position: fixed">Previous</a>
+    }
+}
     </div>

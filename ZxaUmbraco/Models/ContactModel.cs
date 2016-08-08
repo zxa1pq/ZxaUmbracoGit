@@ -14,6 +14,8 @@ namespace ZxaUmbraco.Models
         public string Email { get; set; }
         public string Message { get; set; }
         public string Address { get; set; }
+        public string Postal { get; set; }
+        public string City { get; set; }
         public IEnumerable<SelectListItem> ListOfGenders { get; set; }
         public string SelectedGender { get; set; }
     }
