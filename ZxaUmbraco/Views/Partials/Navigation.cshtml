@@ -8,7 +8,7 @@
 *@
 
 @{ var selection = CurrentPage.Site().Children.Where("Visible"); }
-
+<div id="topHead" style="background-image: url('../../media/bb.png'); background-repeat: no-repeat; background-size: cover;">
 <ul >
 	@{
         var HP = Model.Content.AncestorsOrSelf(1).FirstOrDefault();
@@ -23,16 +23,16 @@
         var imgId = language.GetPropertyValue("languageIcon");
         var img = Umbraco.Media(imgId);
         <a href="@language.Url">
-        <img src="@img.Url" alt="@img.Name" height="30px" width="30px" style="margin: 0px 0px 0px 10px"/>
+      <img src="@img.Url" alt="@img.Name" height="30px" width="30px" style="margin: 0px 0px 0px 10px"/>
        </a>
             }
     }
-
-    <li id="navList" class="navbar navbar-inverse"><a href="@HP.Url">@HP.GetPropertyValue("pageTitle")</a></li>
+    
+    <li id="navList" class="navbar navbar-default "><a href="@HP.Url">@HP.GetPropertyValue("pageTitle")</a></li>
     @foreach (var item in selection)
     {
        
-        <li id="navList" class="@(item.IsAncestorOrSelf(CurrentPage) ? "current" : null)">
+        <li id="navList" class="@(item.IsAncestorOrSelf(CurrentPage) ? "current" : null) navbar navbar-default" >
             <a href="@item.Url">@item.Name</a>
         </li>
         
@@ -44,4 +44,5 @@
     <span class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></span>
     
 </form>
+</div>
 </div>

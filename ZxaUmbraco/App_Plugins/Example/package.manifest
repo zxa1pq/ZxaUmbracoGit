@@ -1,0 +1,7 @@
+﻿{
+javascript: [
+	'~/App_Plugins/Example/backoffice/personTree/editController.Js'
+	'~/App_Plugins/Example/backoffice/personTree/deleteController.Js'
+	'~/App_Plugins/Example/personResource'
+	]
+}

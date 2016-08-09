@@ -8,6 +8,20 @@
 	{
 		view:"~/App_Plugins/CharLimiter/charlimiter.editor.html"
 		
+	},
+
+
+	prevalues:
+	{
+		fields:
+		[
+			{
+				label: "Number of characters",
+				description: "Characters remaining",
+				key:"limit",
+				view:"number"
+			}
+		]
 	}
 	}
 	],
