@@ -8,7 +8,7 @@
 *@
 
 @{ var selection = CurrentPage.Site().Children.Where("Visible"); }
-<div id="topHead" style="background-image: url('../../media/bb.png'); background-repeat: no-repeat; background-size: cover;">
+<div id="topHead">
 <ul >
 	@{
         var HP = Model.Content.AncestorsOrSelf(1).FirstOrDefault();
@@ -28,11 +28,11 @@
             }
     }
     
-    <li id="navList" class="navbar navbar-default "><a href="@HP.Url">@HP.GetPropertyValue("pageTitle")</a></li>
+    <li id="navList" class=""><a href="@HP.Url">@HP.GetPropertyValue("pageTitle")</a></li>
     @foreach (var item in selection)
     {
        
-        <li id="navList" class="@(item.IsAncestorOrSelf(CurrentPage) ? "current" : null) navbar navbar-default" >
+        <li id="navList" class="@(item.IsAncestorOrSelf(CurrentPage) ? "current" : null) " >
             <a href="@item.Url">@item.Name</a>
         </li>
         

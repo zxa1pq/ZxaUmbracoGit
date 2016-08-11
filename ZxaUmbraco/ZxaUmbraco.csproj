@@ -1208,6 +1208,8 @@
     <Content Include="media\1040\gallery-image-8_thumb.jpg" />
     <Content Include="media\1041\gallery-image-9.jpg" />
     <Content Include="media\1041\gallery-image-9_thumb.jpg" />
+    <Content Include="media\1042\logo.png" />
+    <Content Include="media\1042\usflag.png" />
     <Content Include="media\bb.png" />
     <Content Include="packages.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
@@ -1222,6 +1224,7 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\fanoe.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\lightbox.js" />
@@ -1439,6 +1442,8 @@
     <Content Include="App_Plugins\CharLimiter\charlimiter.controller.js" />
     <Content Include="App_Plugins\Example\package.manifest" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Views\Partials\MainNavigation.cshtml" />
+    <Content Include="Views\Partials\BottomNavigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1664,7 +1669,9 @@
     <Content Include="Umbraco\Config\Lang\cs.xml" />
     <Content Include="Umbraco\Config\Lang\da.xml" />
     <Content Include="Umbraco\Config\Lang\de.xml" />
-    <Content Include="Umbraco\Config\Lang\en.xml" />
+    <Content Include="Umbraco\Config\Lang\en.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Umbraco\Config\Lang\en_us.xml" />
     <Content Include="Umbraco\Config\Lang\es.xml" />
     <Content Include="Umbraco\Config\Lang\fr.xml" />
